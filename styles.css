@@ -93,6 +93,21 @@ html, body {
         grid-template-columns: repeat(2,1fr); 
         justify-content: center;   
         align-items: center; 
+        gap: 20px;
+    }
+
+img {
+        max-width: 350px;
+        width:350px;
+        height: 230px;
+        border-radius: 5%;
+    }
+
+    .project-title {
+        font-family: serif;
+        font-weight: 600;
+        color:rgb(28, 78, 105) ;
+        text-align: center;
     }
 
     #contact-section {
