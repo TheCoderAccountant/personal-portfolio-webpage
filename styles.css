@@ -142,15 +142,11 @@ html, body {
         text-align: center;
         margin-top: 6px;
     }
-    .project-title:active {
+    .project-title:active,.project-title:hover {
         transform: scale(1.2);
         text-decoration: none;
     }
 
-    .project-title:hover {
-        transform: scale(1.2);
-        text-decoration: none;
-    }
 
     #contact-section {
         background-color: rgb(237, 182, 80);
