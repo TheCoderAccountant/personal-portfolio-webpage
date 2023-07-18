@@ -80,27 +80,45 @@ html, body {
     #projects {
         background-color: blanchedalmond;
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items:center;
     }
  
+    #projects>h1 {
+        margin-bottom: 10px;
+
+    }
     .grid-container {
-        margin-top: 10%;
+        margin-top: 2%;
+        margin-bottom: 2%;
         display: grid;
-        grid-template-columns: repeat(2,1fr); 
-        justify-content: center;   
-        align-items: center; 
-        gap: 20px;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-row-gap: 40px;
+        grid-column-gap: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-child {
+        text-align: center; 
+        max-width: 500px;
+        height: auto;
     }
 
-img {
-        max-width: 350px;
-        width:350px;
-        height: 230px;
+    img {
+        width :300px;
+        height: 200px;
+        transform: scale(1);
         border-radius: 5%;
+    }
+
+    img.project-img {
+        width: 100%; /* Set the images to take up the full width of their container */
+        height: auto; /* Maintain the aspect ratio of images */
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect to images */
     }
 
     .project-title {
@@ -108,6 +126,7 @@ img {
         font-weight: 600;
         color:rgb(28, 78, 105) ;
         text-align: center;
+        margin-top: 6px;
     }
 
     #contact-section {
@@ -116,6 +135,8 @@ img {
         height: 100vh;
     }
 
+
+    
 
 
  
