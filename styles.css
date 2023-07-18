@@ -44,6 +44,7 @@ html, body {
         color: rgb(26, 11, 11);
         text-decoration: none;
         background-color: grey;
+        height: 100%;
         }
 
     #welcome-section{
@@ -83,7 +84,7 @@ html, body {
     #projects {
         background-color: blanchedalmond;
         width: 100vw;
-        height: auto;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -98,24 +99,37 @@ html, body {
         opacity: 0.8;
     }
  
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2,1fr); 
-        justify-content: center;   
-        align-items: center; 
-        gap: 40px;
+    #projects>h1 {
+        margin-bottom: 10px;
+
     }
-
-    .grid-child > a{
-        text-decoration: none;
-
+    .grid-container {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-row-gap: 40px;
+        grid-column-gap: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-child {
+        text-align: center; 
+        max-width: 500px;
+        height: auto;
     }
 
     img {
-        max-width: 400px;
-        width:400px;
-        height: 290px;
+        width :300px;
+        height: 200px;
         border-radius: 5%;
+    }
+
+    img.project-img {
+        width: 100%; /* Set the images to take up the full width of their container */
+        height: auto; /* Maintain the aspect ratio of images */
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect to images */
     }
 
     .project-title {
@@ -125,7 +139,16 @@ html, body {
         text-decoration: none;
         color:rgb(28, 78, 105) ;
         text-align: center;
-    
+        margin-top: 6px;
+    }
+    .project-title:active {
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+
+    .project-title:hover {
+        transform: scale(1.2);
+        text-decoration: none;
     }
 
     #contact-section {
