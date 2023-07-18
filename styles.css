@@ -1,7 +1,11 @@
-html, body {
+* {
     box-sizing: border-box;
-    scroll-behavior: smooth;
     margin: 0;
+  }
+
+html, body {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
     #navbar {
         background-color: rgb(180, 14, 14);
@@ -28,18 +32,17 @@ html, body {
         align-items: center;
     }
 
-    a {
+    .right-nav > a {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(216, 216, 216);
         padding: 10px;
         text-decoration: none;
     }
 
-    a:active, a:hover  {
+    .right-nav > a:active, .right-nav> a:hover  {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(26, 11, 11);
         text-decoration: none;
-        height: 100%;
         background-color: grey;
         }
 
@@ -71,43 +74,58 @@ html, body {
         text-align: center;
     }
     .red-my {
-        color: brown;
+        color: #a52a2a;
     }
     .blue-my{
-        color: rgb(120, 120, 245);
+        color: #7878f5;
     }
 
     #projects {
         background-color: blanchedalmond;
         width: 100vw;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items:center;
     }
+
+    #projects > h1{
+        color: rgb(82, 56, 4);
+        font-size: 2.3rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        opacity: 0.8;
+    }
  
     .grid-container {
-        margin-top: 10%;
         display: grid;
         grid-template-columns: repeat(2,1fr); 
         justify-content: center;   
         align-items: center; 
-        gap: 20px;
+        gap: 40px;
     }
 
-img {
-        max-width: 350px;
-        width:350px;
-        height: 230px;
+    .grid-child > a{
+        text-decoration: none;
+
+    }
+
+    img {
+        max-width: 400px;
+        width:400px;
+        height: 290px;
         border-radius: 5%;
     }
 
     .project-title {
         font-family: serif;
         font-weight: 600;
+        font-size: 1.5rem;
+        text-decoration: none;
         color:rgb(28, 78, 105) ;
         text-align: center;
+    
     }
 
     #contact-section {
@@ -116,6 +134,22 @@ img {
         height: 100vh;
     }
 
+    .btn {
+        padding: 10px 20px;
+        font-size: 28px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #81898f;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        grid-column: 1/-1;
+        margin-bottom: 10px;
+      }
 
-
+      .btn > a {
+        text-decoration: none;
+        color: #fff;
+      }
  
