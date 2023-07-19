@@ -6,7 +6,9 @@
     --font-projects: 'Roboto Condensed', sans-serif;
 }
 
-* {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
     margin: 0;
 }
@@ -61,7 +63,7 @@ a {
     font-family: var(--font-navbar);
     font-weight: 700;
     color: rgb(26, 11, 11);
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
