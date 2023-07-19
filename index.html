@@ -1,71 +1,90 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Personal Portfolio Webpage</title>
-    </head>
-   <body>
-        <nav id="navbar">
-            <div class="left-nav"></div>
-            <div class="right-nav">
-                <a href="#welcome-section">about</a>
-                <a href="#projects">projects</a>
-                <a href="#contact-section">contact</a>
-            </div>
-        </nav>
-        <section id="welcome-section" class="section">
-            <h1>Welcome to <span class="red-my">my</span> place</h1>
-            <hr>
-            <p><span class="blue-my">my</span> name is Nurlan</p>
-        </section>
-        <section id="projects" class="section">
-                <h1>You can go through my projects</h1>
-                <div class="grid-container">
-                    <div class="grid-child">
-                        <a href="https://codepen.io/CoderAccountant/pen/poQyjxN">
-                            <img class="project-img" src="assets/technical-docs.png" alt="Technical Documentation">
-                            <div class="project-title">Technical Documentation</div>
-                        </a>
-                    </div>
-                    <div class="grid-child">
-                        <a href="https://github.com/TheCoderAccountant/random-quote-machine.git">
-                            <img class="project-img" src="assets/random-quote.png" alt="Random Quote Machine">
-                            <div class="project-title">Random Quote Machine</div>
-                        </a>
-                    </div>
-                    <div class="grid-child">
-                        <a href="https://codepen.io/CoderAccountant/pen/GRwxyKQ">
-                            <img class="project-img" src="assets/survey-form.png" alt="Survey Form">
-                            <div class="project-title">Survey Form</div>
-                        </a>
-                    </div>
-                    <div class="grid-child">
-                        <a href="https://codepen.io/CoderAccountant/pen/bGYVxEN">
-                            <img class="project-img" src="assets/my-tribute.png" alt="Tribute Page">
-                            <div class="project-title">Tribute Page</div>
-                        </a>
-                    </div>
-                    <button class="btn"><a href="https://codepen.io/CoderAccountant">See All>></a></button>        
-        </section>
+<!DOCTYPE html>
+<html lang="en">
 
-        <section id="contact-section" class="section">
-            <div class="flex-contact">
-                <h1 class="work-with-me">I am not <em><strong>Perfect</strong></em>, but I am who you are looking for</h1>
-                <p class="contact-wording">together we can do it...</p>
-                <br>
-                <div class="socials">
-                    <div class="social social-fb">Facebook</div>
-                    <div class="social social-gthb">Github</div>
-                    <div class="social social-lnkd">Linkedin</div>
-                    <div class="social social-email">E-mail</div>
-                    <div class="social social-phone">Phone</div>
-                </div>
-                <br>
-                <hr>
-                <p>&copy; 2023 Nurlan Khammadli. All rights reserved.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300,700&display=swap" rel="stylesheet">
+    <title>Personal Portfolio Webpage</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="left-nav"></div>
+        <div class="right-nav">
+            <a href="#welcome-section">about</a>
+            <a href="#projects">projects</a>
+            <a href="#contact-section">contact</a>
+        </div>
+    </nav>
+    <section id="welcome-section" class="section">
+        <h1>Welcome to <span class="red-my">my</span> place</h1>
+        <hr>
+        <p><span class="blue-my">my</span> name is Nurlan</p>
+    </section>
+    <section id="projects" class="section">
+        <h1>You can go through my projects</h1>
+        <div class="grid-container">
+            <div class="grid-child">
+                <a href="https://codepen.io/CoderAccountant/pen/poQyjxN" target="_blank">
+                    <img class="project-img" src="assets/technical-docs.png" alt="Technical Documentation">
+                    <div class="project-tile">Technical Documentation</div>
+                </a>
             </div>
-        </section>
-    </body>
-    </html>
+            <div class="grid-child">
+                <a href="https://github.com/TheCoderAccountant/random-quote-machine.git" target="_blank">
+                    <img class="project-img" src="assets/random-quote.png" alt="Random Quote Machine">
+                    <div class="project-tile">Random Quote Machine</div>
+                </a>
+            </div>
+            <div class="grid-child">
+                <a href="https://codepen.io/CoderAccountant/pen/GRwxyKQ" target="_blank">
+                    <img class="project-img" src="assets/survey-form.png" alt="Survey Form">
+                    <div class="project-tile">Survey Form</div>
+                </a>
+            </div>
+            <div class="grid-child">
+                <a href="https://codepen.io/CoderAccountant/pen/bGYVxEN" target="_blank">
+                    <img class="project-img" src="assets/my-tribute.png" alt="Tribute Page">
+                    <div class="project-tile">Tribute Page</div>
+                </a>
+            </div>
+            <button class="btn"><a href="https://codepen.io/CoderAccountant" target="_blank"><strong>See
+                        All</strong></a></button>
+    </section>
+
+    <section id="contact-section" class="section">
+        <div class="flex-contact">
+            <h1 class="work-with-me">I am not <em><strong>Perfect</strong></em>, but I am who you are looking for</h1>
+            <p class="contact-wording">together we can do it...</p>
+            <br>
+            <div class="socials">
+                <a id="profile-link" href="https://www.facebook.com/nurlan.xm" target="_blank">
+                    <div class="social social-fb"><i class="fab fa-facebook"></i> Facebook</div>
+                </a>
+                <a id="profile-link" href="https://github.com/TheCoderAccountant" target="_blank">
+                    <div class="social social-gthb"><i class="fab fa-github"></i> Github</div>
+                </a>
+                <a id="profile-link" href="https://www.linkedin.com/in/nurlan-khammadli/" target="_blank">
+                    <div class="social social-lnkd"><i class="fab fa-linkedin-in"></i> Linkedin</div>
+                </a>
+                <a id="email-link" href="mailto:nurlanxm@gmail.com" target="_blank">
+                    <div class="social social-email"><i class="fas fa-solid fa-envelope"></i> E-mail</div>
+                </a>
+                <a id="phone-link" href="tel:555-555-555">
+                    <div class="social social-phone"><i class="fas fa-solid fa-phone"></i> Phone</div>
+                </a>
+            </div>
+            <br>
+            <hr>
+            <p>&copy; 2023 Nurlan Khammadli. All rights reserved.</p>
+        </div>
+    </section>
+</body>
+
+</html>
